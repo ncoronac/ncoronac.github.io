@@ -1,0 +1,237 @@
+:root {
+    /* variables */
+    --cg-black: rgb(30, 32, 32);
+    --cg-white: rgb(255, 255, 255);
+    --cg-red: #772C2C
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding: 10;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+    padding: 10px 80px 50px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-family: "Robot Mono", sans-serif;
+  }
+
+/* CSS for homepage */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 5px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.about-image img {
+    max-width: 250px;
+    border-radius: 3px;
+}
+
+.about-text {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.about-text h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+/* CSS for navigation bar */
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 7%;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    background-color: var(--cg-white);
+    padding: 0px 0px;
+    border: 2px solid var(--cg-white);
+    border-bottom-color: var(--cg-black);
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 30px;
+    list-style: none;
+}
+
+.navbar a {
+    color: var(--cg-black);
+    font-weight: bold;
+    font-family: 'Roboto Mono', sans-serif;
+    margin: 0 12px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.navbar a:hover {
+    color: var(--cg-red);
+    text-decoration: underline;
+}
+
+.navbar a:active {
+    color: var(--cg-black);
+}
+
+.logo a:hover {
+    text-decoration: None;
+}
+
+/* CSS for portfolio */
+.project {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 1em 0 2em 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 5px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-details, .description {
+    font-size: 16px;
+}
+
+.project-name {
+    font-size: 18px;
+}
+
+.project-img {
+    max-width: 480px;
+    border-radius: 3px;
+    align-self: center;
+}
+
+.project-img a:hover {
+    color: var(--cg-red);
+    text-decoration: underline;
+}
+
+.project-details a {
+    font-size: 16px;
+    color: var(--cg-black);
+    text-decoration: none;
+}
+.project-details a:hover {
+    color: var(--cg-red);
+    text-decoration: underline;
+}
+
+/* CSS for resume */
+.resume {
+    max-width: 900px;
+}
+.button {
+    background-color: var(--cg-red);
+    border: none;
+    color: var(--cg-white);
+  
+    font-family: monospace;
+  
+    padding: 5px 7px;
+    text-align: center;
+  
+    border-radius: 2px;
+}
+
+.button:hover {
+    background-color: var(--cg-black);
+}
+
+.section-title {
+    background-color: var(--cg-white);
+    padding: 0px 0px;
+    border: 1px solid var(--cg-white);
+    border-bottom-color: var(--cg-black);
+    margin-top: 50px;
+}
+
+/* CSS for input tags in contact form */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;
+  resize: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Add some spacing to the form */
+form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* my blog */
+.sky-imgs {
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 5px solid transparent;
+}
+
+.sky {
+    max-width: 300px ;
+    margin: 10px;
+}
+
+/* CSS for footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cg-white);
+    color: var(--cg-black);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+  }
