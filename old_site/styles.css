@@ -2,7 +2,7 @@
     /* variables */
     --cg-black: rgb(30, 32, 32);
     --cg-white: rgb(255, 255, 255);
-    --cg-red: #772C2C
+    --cg-red: #772c2c;
 }
 
 html {
@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
     padding: 10;
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 main {
@@ -30,7 +30,7 @@ main {
     justify-content: center;
     font-size: 35px;
     font-family: "Robot Mono", sans-serif;
-  }
+}
 
 /* CSS for homepage */
 .about {
@@ -42,7 +42,7 @@ main {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-  
+
 .about-image img {
     max-width: 250px;
     border-radius: 3px;
@@ -94,7 +94,7 @@ main {
 .navbar a {
     color: var(--cg-black);
     font-weight: bold;
-    font-family: 'Roboto Mono', sans-serif;
+    font-family: "Roboto Mono", sans-serif;
     margin: 0 12px;
     text-decoration: none;
     letter-spacing: 2px;
@@ -127,7 +127,8 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.project-details, .description {
+.project-details,
+.description {
     font-size: 16px;
 }
 
@@ -164,12 +165,12 @@ main {
     background-color: var(--cg-red);
     border: none;
     color: var(--cg-white);
-  
+
     font-family: monospace;
-  
+
     padding: 5px 7px;
     text-align: center;
-  
+
     border-radius: 2px;
 }
 
@@ -189,13 +190,13 @@ main {
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 18px;
-  resize: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    resize: none;
 }
 
 label {
@@ -219,7 +220,7 @@ form {
 }
 
 .sky {
-    max-width: 300px ;
+    max-width: 300px;
     margin: 10px;
 }
 
@@ -234,4 +235,4 @@ form {
     bottom: 0;
     width: 100%;
     height: 2.5rem;
-  }
+}

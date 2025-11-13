@@ -1,0 +1,101 @@
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px;
+    gap: 40px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 115px;
+    gap: 40px;
+}
+
+.project-container p {
+    text-align: left;
+    margin: 10px;
+}
+
+.personal-container {
+    flex: 1;
+    /* max-width: 1000px; */
+    background-color: #f4e0ef;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.22);
+}
+
+.other-pages {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    /* width: 840px; */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    gap: 40px;
+}
+
+.projects-description{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    background: linear-gradient(to right, #ffccda, #cdaaf7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.22);
+}
+
+.coblop-description{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    background: linear-gradient(to right, #ffccda, #bcedb9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.22);
+}
+
+/* Hover animation */
+.coblop-description:hover,
+.projects-description:hover,
+.resume-description:hover {
+  transform: scale(1.1);
+  color: #6c63ff;
+}
+
+.resume-description{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    background: linear-gradient(to right, #92bcff, #bcedb9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.22);
+}
+
+.temp-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+@media (max-width: 800px) {
+    .home-container {
+        flex-direction: column;
+    }
+
+    .other-pages {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,39 @@
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* width: 100%;
+    height: 100px; */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    border-radius: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  font-size: 30px;
+  /* border-radius: 50%; */
+  cursor: pointer;
+  color: #443d5a;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Hover animation */
+.navbar button:hover {
+  /* transform: scale(1.2); */
+  color: #6c63ff;
+}
+
+/* Highlight active page */
+.navbar .active {
+  border-bottom: 3px solid #6c63ff;
+  transform: scale(1.1);
+}

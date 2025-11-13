@@ -1,0 +1,20 @@
+.resume-container {
+    padding: 115px;
+    /* background: #fafafa; */
+    max-width: 900px;
+    margin: 0 auto;
+
+    left: 0;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* pushes h2s to opposite ends */
+    align-items: center;
+    gap: 1rem; /* optional spacing between them */
+}
+
+.section-header h2 {
+    margin: 0; /* remove default margins to align neatly */
+}
