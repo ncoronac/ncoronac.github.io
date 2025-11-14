@@ -1,22 +1,25 @@
 .navbar {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    /* width: 100%;
-    height: 100px; */
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+  position: fixed;
+  top: var(--nav-offset);
+  left: 50%;
+  transform: translateX(-50%);
 
-    border-radius: 40px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    z-index: 100;
+  backdrop-filter: blur(10px);      /* the magic */
+    -webkit-backdrop-filter: blur(10px);
+
+  /* background-color: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  border-radius: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
 }
 
 .navbar button {
+  position: relative;
   background: none;
   border: none;
   font-size: 30px;
@@ -26,10 +29,31 @@
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
+.navbar button::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(50, 50, 50, 0.9);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
 /* Hover animation */
 .navbar button:hover {
   /* transform: scale(1.2); */
   color: #6c63ff;
+}
+
+.navbar button:hover::after {
+  opacity: 1;
 }
 
 /* Highlight active page */

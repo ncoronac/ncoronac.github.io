@@ -5,12 +5,15 @@
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    /* background-color: #242424; */
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    --nav-height: 80px;
+    --nav-offset: 20px;
 }
 
 a {
@@ -18,16 +21,9 @@ a {
     color: #646cff;
     text-decoration: inherit;
 }
-a:hover {
-    color: #535bf2;
-}
 
-body {
-    margin: 0;
-    display: flex;
-    place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
+a:hover {
+    transform: scale(1.05);
 }
 
 button {
@@ -42,12 +38,13 @@ button {
     transition: border-color 0.25s;
 }
 button:hover {
-    border-color: #646cff;
+    border-color: black;
 }
-button:focus,
+
+/* button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
     :root {
@@ -55,7 +52,7 @@ button:focus-visible {
         background-color: #ffffff;
     }
     a:hover {
-        color: #747bff;
+        /* color: #747bff; */
     }
     button {
         background-color: #f9f9f9;
@@ -63,9 +60,9 @@ button:focus-visible {
 }
 
 
-/* I ADDED THIS ONE */
+/* ADDED */
 .special-text {
-    color: #6443c7;
+    color: #1b57a4;
     font-weight: bold;
 }
 
@@ -77,4 +74,19 @@ h1 {
 
 h2 {
     font-size: 20px;
+}
+
+body {
+    margin: 0;
+    /* display: flex;
+    place-items: center; */
+    min-width: 320px;
+    min-height: 100vh;
+
+    /* blotches */
+    background: radial-gradient(circle at 95% 10%, rgba(168, 50, 70, 0.18), transparent 10%),
+        radial-gradient(circle at 15% 30%, rgba(139, 65, 250, 0.15), transparent 16%),
+        radial-gradient(circle at 70% 80%, rgba(67, 225, 70, 0.15), transparent 30%),
+        white;
+    background-attachment: fixed;
 }

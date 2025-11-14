@@ -1,42 +1,105 @@
 import "./Resume.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedinIn, faReact, faGitAlt, faPython, faJava, faHtml5, faFigma } from "@fortawesome/free-brands-svg-icons";
+import { faFile } from "@fortawesome/free-solid-svg-icons";
+
+import viteIcon from "/vite.svg";
+
 export default function Resume () {
     return (
         <div className="resume-container">
-            <h1 className="resume-headers">About me</h1>
+            <h1>My Professional Journey</h1>
+            <div className="socials">
+                <a
+                    href="https://github.com/ncoronac"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <FontAwesomeIcon icon={faGithub} style={{color: "#1b57a4"}} size="2x" />
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/ncoronac?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <FontAwesomeIcon icon={faLinkedinIn} style={{color: "#1b57a4"}} size="2x" />
+                </a>
+
+                <a
+                    href="/NCORONA_Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <FontAwesomeIcon icon={faFile} style={{color: "#1b57a4"}} size="2x" />
+                </a>
+            </div>
+
+            <div className="skills-carousel">
+                <div className="carousel-track">
+                    <div className="carousel-group">
+                        <FontAwesomeIcon icon={faReact} style={{color: "#61dafb"}} size="4x" />
+                        <img src={viteIcon} alt="icon" className="icon" style={{width: "55px"}} />
+                        <FontAwesomeIcon icon={faGitAlt} style={{color: "#F1502F"}} size="4x" />
+                        <FontAwesomeIcon icon={faPython} style={{color: "#306998"}} size="4x" />
+                        <FontAwesomeIcon icon={faJava} style={{color: "#5382a1"}} size="4x" />
+                        <FontAwesomeIcon icon={faHtml5} style={{color: "#f06529"}} size="4x" />
+                        <FontAwesomeIcon icon={faFigma} style={{color: "#ae4dff"}} size="4x" />
+                    </div>
+
+                    <div className="carousel-group">
+                        <FontAwesomeIcon icon={faReact} style={{color: "#61dafb"}} size="4x" />
+                        <img src={viteIcon} alt="icon" className="icon" style={{width: "55px"}} />
+                        <FontAwesomeIcon icon={faGitAlt} style={{color: "#F1502F"}} size="4x" />
+                        <FontAwesomeIcon icon={faPython} style={{color: "#306998"}} size="4x" />
+                        <FontAwesomeIcon icon={faJava} style={{color: "#5382a1"}} size="4x" />
+                        <FontAwesomeIcon icon={faHtml5} style={{color: "#f06529"}} size="4x" />
+                        <FontAwesomeIcon icon={faFigma} style={{color: "#ae4dff"}} size="4x" />
+                    </div>
+                </div>
+            </div>
+
             {/* things i can add for a description Student, creative learner, aspiring front-end developer */}
-            <div className="section">
-                <div className="section-header">
+
+            <hr style={{border: "none",
+                height: "1px",
+                marginTop: "3rem",
+                background: "linear-gradient(to right, transparent, #2f2f2fff, transparent",
+            }}/>
+
+            <div className="resume-section">
+                <div className="section">
                     <h2>California Polytechnic State University, San Luis Obispo</h2>
-                    <h2 className="special-text">Graduation: Spring 2027</h2>
+                    <h3 className="special-text">Graduation: Spring 2027</h3>
+                    <p>Bachelor of Science in Computer Science</p>
+                    <ul>
+                        <li>Related Coursework: Data Structures, Proj-Based Object-Oriented Programming</li>
+                        <li>Current Coursework: Programming Languages, Intro to Software Engineering</li>
+                    </ul>
                 </div>
-                <p>Bachelor of Science in Computer Science</p>
-                <ul>
-                    <li>Related Coursework: Data Structures, Proj-Based Object-Oriented Programming</li>
-                    <li>Current Coursework: Programming Languages, Intro to Software Engineering</li>
-                </ul>
 
 
-                <div className="section-header">
-                    <h2>Fronend Developer</h2>
-                    <h2 className="special-text">Current</h2>
+                <div className="section">
+                    <h2>Frontend Developer</h2>
+                    <h3 className="special-text">Current</h3>
+                        <p>React, Express, Vite, Javascript, CSS, Git, GitHub, MongoDB</p>
+                    <ul>
+                        <li>Collaborated with four teammates to design and implement a digital diary and mood tracking app using React and Express.</li>
+                        <li>Created a Figma prototype for the emotion tracker interface, including personalized prompts and mood visualization, ensuring a user-friendly and engaging experience.</li>
+                    </ul>
                 </div>
-                <p>Group Collaboration</p>
-                <ul>
-                    <li>Collaborating with a small team to create a full-stack diary and emotion tracker.</li>
-                    <li>Developing web application to take user accounts.</li>
-                </ul>
 
 
-                <div className="section-header">
+                <div className="section">
                     <h2>Undergraduate Student Researcher</h2>
-                    <h2 className="special-text">Current</h2>
+                    <h3 className="special-text">Current</h3>
+                        <p>React, Vite, Javascript, CSS, Git</p>
+                    <ul>
+                        <li>Conducted research studying how early programming experience influences underrespresented group's pursuit in computer science.</li>
+                        <li>Currently collaborating on the development of CoBloP, adding collaborative features, multilingual support, and complex coding games.</li>
+                    </ul>
                 </div>
-                <p>React, Vite, Javascript, CSS, Git</p>
-                <ul>
-                    <li>Conducted research studying how early programming experience influences underrespresented group's pursuit in computer science.</li>
-                    <li>Currently collaborating on the development of CoBloP, adding collaborative features, multilingual support, and complex coding games.</li>
-                </ul>
             </div>
         </div>
     )

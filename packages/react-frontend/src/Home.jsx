@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
-import tempImage from "./tempImage.jpeg"
+import tempImage from "./tempImage.jpeg";
 
 export default function Home() {
     return (
@@ -16,12 +16,18 @@ export default function Home() {
             </div>
 
             <div className="other-pages">
-                <Link to="/portfolio" className="projects-description">
-                    <h2>Projects</h2>
-                </Link>
-                <Link to="/resume" className="resume-description">
-                    <h2>Resume</h2>
-                </Link>
+                <div className="purpose-stmt"><h1>Hi 👋, I'm Noemi and I like <span className="special-text">creating</span>!</h1></div>
+
+                <div className="row">
+                    <Link to="/portfolio" className="projects-description">
+                        <h2>Projects</h2>
+                    </Link>
+
+                    <Link to="/resume" className="resume-description">
+                        <h2>Resume</h2>
+                    </Link>
+                </div>
+                
             </div>
         </div>
     );
