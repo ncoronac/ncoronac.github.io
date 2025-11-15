@@ -1,10 +1,12 @@
 .resume-container {
-    padding: 115px;
+    padding: 110px;
     /* background: #fafafa; */
     max-width: 900px;
     margin: 0 auto;
-
     left: 0;
+    padding: clamp(20px, 10vw, 110px);
+    padding-top: calc(var(--nav-height) + var(--nav-offset) + 3px);
+    gap: clamp(20px, 5vw, 40px);
 }
 
 .resume-container h1 {
@@ -54,5 +56,21 @@
     }
     100% {
         transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel-track {
+        animation: scroll 10s linear infinite;
+    }
+
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+    }
+
+    .carousel-group > * {
+        width: clamp(40px, 10vw, 60px);
+        /* margin: ; */
     }
 }

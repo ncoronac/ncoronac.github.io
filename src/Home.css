@@ -17,8 +17,9 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 115px;
-    gap: 40px;
+    padding: clamp(20px, 10vw, 110px);
+    padding-top: calc(var(--nav-height) + var(--nav-offset) + 3px);
+    gap: clamp(20px, 5vw, 40px);
 }
 
 .project-container p {
@@ -57,6 +58,11 @@
     color: black;
 }
 
+.social-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
 .purpose-stmt h1{
     font-size: clamp(1.5rem, 5vw, 70px);
     border-radius: 10px;
@@ -78,6 +84,15 @@
 
 .fourtherecord-description {
     background: linear-gradient(to right, rgba(100, 195, 196, 0.45), rgba(99, 145, 251, 0.45));
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .coblop-description:hover,
+    .fourtherecord-description:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 }
 
 @media (max-width: 900px) {

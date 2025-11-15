@@ -55,7 +55,7 @@ export default function Resume () {
 
                 <div className="section">
                     <h2>Frontend Developer</h2>
-                    <h3 className="special-text">Current</h3>
+                    <h3 className="special-text">October 2025 - Current</h3>
                         <p>React, Express, Vite, Javascript, CSS, Git, GitHub, MongoDB</p>
                     <ul>
                         <li>Collaborated with four teammates to design and implement a digital diary and mood tracking app using React and Express.</li>
@@ -66,7 +66,7 @@ export default function Resume () {
 
                 <div className="section">
                     <h2>Undergraduate Student Researcher</h2>
-                    <h3 className="special-text">Current</h3>
+                    <h3 className="special-text">June 2025 - Current</h3>
                         <p>React, Vite, Javascript, CSS, Git</p>
                     <ul>
                         <li>Conducted research studying how early programming experience influences underrespresented group's pursuit in computer science.</li>

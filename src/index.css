@@ -4,7 +4,7 @@
     font-weight: 400;
 
     /* color-scheme: light dark; */
-    color: rgba(255, 255, 255, 0.87);
+    /* color: rgba(255, 255, 255, 0.87); */
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -13,16 +13,6 @@
 
     --nav-height: 80px;
     --nav-offset: 20px;
-}
-
-a {
-    font-weight: 500;
-    color: #646cff;
-    text-decoration: inherit;
-}
-
-a:hover {
-    transform: scale(1.05);
 }
 
 button {
@@ -38,24 +28,6 @@ button {
 }
 button:hover {
     border-color: black;
-}
-
-/* button:focus,
-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-} */
-
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
-    }
-    a:hover {
-        /* color: #747bff; */
-    }
-    button {
-        background-color: #f9f9f9;
-    }
 }
 
 
@@ -86,4 +58,10 @@ body {
         radial-gradient(circle at 70% 80%, rgba(67, 225, 70, 0.15), transparent 30%),
         white;
     background-attachment: fixed;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        background: transparent;
+    }
 }
