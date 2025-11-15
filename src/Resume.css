@@ -17,13 +17,12 @@
 .section {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* pushes h2s to opposite ends */
+    justify-content: space-between;
     align-items: left;
-    /* gap: 1rem; optional spacing between them */
 }
 
 .section h2, h3, p, ul {
-    margin: 2px; /* remove default margins to align neatly */
+    margin: 2px;
 }
 
 .socials {
@@ -36,12 +35,8 @@
 }
 
 .skills-carousel {
-    /* display: flex;
-    padding: 15px 0; */
-
     overflow: hidden;
     width: 100%;
-    /* animation: scroll 20s linear infinite; */
 }
 
 .carousel-track {
@@ -56,9 +51,6 @@
 .carousel-group > * {
     flex: 0 0 auto;
     margin: 0 30px;
-    /* flex-shrink: 0;
-    flex-grow: 0;
-    width: 100px; */
 }
 
 @keyframes scroll {
