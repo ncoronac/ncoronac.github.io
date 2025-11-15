@@ -1,40 +1,14 @@
 import "./Resume.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedinIn, faReact, faGitAlt, faPython, faJava, faHtml5, faFigma } from "@fortawesome/free-brands-svg-icons";
-import { faFile } from "@fortawesome/free-solid-svg-icons";
+import { faReact, faGitAlt, faPython, faJava, faHtml5, faFigma } from "@fortawesome/free-brands-svg-icons";
 
 import viteIcon from "/vite.svg";
 
 export default function Resume () {
     return (
         <div className="resume-container">
-            <h1>My Professional Journey</h1>
-            <div className="socials">
-                <a
-                    href="https://github.com/ncoronac"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <FontAwesomeIcon icon={faGithub} style={{color: "#1b57a4"}} size="2x" />
-                </a>
-
-                <a
-                    href="https://www.linkedin.com/in/ncoronac?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <FontAwesomeIcon icon={faLinkedinIn} style={{color: "#1b57a4"}} size="2x" />
-                </a>
-
-                <a
-                    href="/NCORONA_Resume.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <FontAwesomeIcon icon={faFile} style={{color: "#1b57a4"}} size="2x" />
-                </a>
-            </div>
+            <h1>Experience</h1>
 
             <div className="skills-carousel">
                 <div className="carousel-track">
@@ -60,7 +34,6 @@ export default function Resume () {
                 </div>
             </div>
 
-            {/* things i can add for a description Student, creative learner, aspiring front-end developer */}
 
             <hr style={{border: "none",
                 height: "1px",

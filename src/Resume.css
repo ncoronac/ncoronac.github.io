@@ -7,6 +7,10 @@
     left: 0;
 }
 
+.resume-container h1 {
+    margin-bottom: 40px;
+}
+
 .resume-section {
     display: flex;
     flex-direction: column;
@@ -23,15 +27,6 @@
 
 .section h2, h3, p, ul {
     margin: 2px;
-}
-
-.socials {
-    display: flex;
-    padding: 10px;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
 }
 
 .skills-carousel {
