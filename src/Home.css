@@ -1,3 +1,4 @@
+/* HOME PAGE CSS */
 .home-container {
     height: 100svh;
     display: flex;
@@ -10,30 +11,6 @@
     background: radial-gradient(circle at 10% 85%, rgba(255, 135, 22, 0.324), transparent 20%),
         radial-gradient(circle at 60% 30%, rgba(250, 65, 65, 0.15), transparent 19%),
         transparent;
-}
-
-.portfolio-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: clamp(20px, 10vw, 110px);
-    padding-top: calc(var(--nav-height) + var(--nav-offset) + 3px);
-    gap: clamp(20px, 5vw, 40px);
-}
-
-.project-container p {
-    text-align: left;
-    margin: 12px;
-}
-
-.project-container {
-    display: flex;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
-    align-items: center;
-    gap: clamp(20px, 5vw, 40px);
 }
 
 .purpose-stmt {
@@ -69,6 +46,31 @@
     align-items: center;
 }
 
+/* PORTFOLIO PAGE CSS */
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(20px, 10vw, 110px);
+    padding-top: calc(var(--nav-height) + var(--nav-offset) + 3px);
+    gap: clamp(20px, 5vw, 40px);
+}
+
+.project-container p {
+    text-align: left;
+    margin: 12px;
+}
+
+.project-container {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(20px, 5vw, 40px);
+}
+
 .project {
     overflow: hidden;
     backdrop-filter: blur(20px);
@@ -99,15 +101,6 @@
     display: block;
     border: none;
 }
-
-/* @media (hover: hover) and (pointer: fine) {
-    .coblop-description:hover,
-    .fourtherecord-description:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-} */
 
 @media (max-width: 900px) {
     .project-container {
